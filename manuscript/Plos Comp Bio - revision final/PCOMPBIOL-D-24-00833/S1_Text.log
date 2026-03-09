@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.7) (preloaded format=pdflatex 2022.12.10)  1 MAR 2026 03:18
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.7) (preloaded format=pdflatex 2022.12.10)  9 MAR 2026 00:59
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -821,8 +821,8 @@ Package: titlesec 2021/07/05 v2.14 Sectioning titles
 \titlewidthlast=\dimen276
 \titlewidthfirst=\dimen277
 )
-LaTeX Font Info:    Trying to load font information for OT1+ptm on input line 7
-8.
+LaTeX Font Info:    Trying to load font information for OT1+ptm on input line 8
+4.
 
 (C:\Users\Siyu Wang\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\ot1ptm.fd
 File: ot1ptm.fd 2001/06/04 font definitions for OT1/ptm.
@@ -835,25 +835,25 @@ File: l3backend-pdftex.def 2022-07-01 L3 backend support: PDF output (pdfTeX)
 ) (S1_Text.aux)
 \openout1 = `S1_Text.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 78.
-LaTeX Font Info:    ... okay on input line 78.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 78.
-LaTeX Font Info:    ... okay on input line 78.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 78.
-LaTeX Font Info:    ... okay on input line 78.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 78.
-LaTeX Font Info:    ... okay on input line 78.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 78.
-LaTeX Font Info:    ... okay on input line 78.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 78.
-LaTeX Font Info:    ... okay on input line 78.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 78.
-LaTeX Font Info:    ... okay on input line 78.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 78.
-LaTeX Font Info:    ... okay on input line 78.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 78.
-LaTeX Font Info:    ... okay on input line 78.
-Package hyperref Info: Link coloring OFF on input line 78.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 84.
+LaTeX Font Info:    ... okay on input line 84.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 84.
+LaTeX Font Info:    ... okay on input line 84.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 84.
+LaTeX Font Info:    ... okay on input line 84.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 84.
+LaTeX Font Info:    ... okay on input line 84.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 84.
+LaTeX Font Info:    ... okay on input line 84.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 84.
+LaTeX Font Info:    ... okay on input line 84.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 84.
+LaTeX Font Info:    ... okay on input line 84.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 84.
+LaTeX Font Info:    ... okay on input line 84.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 84.
+LaTeX Font Info:    ... okay on input line 84.
+Package hyperref Info: Link coloring OFF on input line 84.
  (S1_Text.out) (S1_Text.out)
 \@outlinefile=\write4
 \openout4 = `S1_Text.out'.
@@ -892,14 +892,14 @@ Package caption Info: End \AtBeginDocument code.
 Package todonotes Warning: The length marginparwidth is less than 2cm and will 
 most likely cause issues with the appearance of inserted todonotes. The issue c
 an be solved by adding a line like \setlength {\marginparwidth }{2cm} prior to 
-loading the todonotes package. on input line 78.
+loading the todonotes package. on input line 84.
 
-LaTeX Font Info:    Trying to load font information for U+msa on input line 79.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 85.
 
 (C:\Users\Siyu Wang\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 79.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 85.
 
 
 (C:\Users\Siyu Wang\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsb.fd
@@ -912,113 +912,32 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 \tf@toc=\write5
 \openout5 = `S1_Text.toc'.
 
- [2]
-<SFigs/S4_fig.jpg, id=64, 1254.6875pt x 1247.66125pt>
-File: SFigs/S4_fig.jpg Graphic file (type jpg)
-<use SFigs/S4_fig.jpg>
-Package pdftex.def Info: SFigs/S4_fig.jpg  used on input line 91.
-(pdftex.def)             Requested size: 505.89pt x 503.05359pt.
-LaTeX Font Info:    Trying to load font information for OT1+phv on input line 9
-2.
+ [2] [3] [4] [5] [6]
+LaTeX Font Info:    Trying to load font information for OT1+phv on input line 1
+92.
 
 (C:\Users\Siyu Wang\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\ot1phv.fd
 File: ot1phv.fd 2020/03/25 scalable font definitions for OT1/phv.
 )
-[3] [4 <./SFigs/S4_fig.jpg>]
-<SFigs/S5_fig.jpg, id=83, 1850.915pt x 1247.66125pt>
-File: SFigs/S5_fig.jpg Graphic file (type jpg)
-<use SFigs/S5_fig.jpg>
-Package pdftex.def Info: SFigs/S5_fig.jpg  used on input line 103.
-(pdftex.def)             Requested size: 505.89pt x 341.00423pt.
- [5]
-<SFigs/S6_fig.jpg, id=90, 1850.915pt x 1247.66125pt>
-File: SFigs/S6_fig.jpg Graphic file (type jpg)
-<use SFigs/S6_fig.jpg>
-Package pdftex.def Info: SFigs/S6_fig.jpg  used on input line 111.
-(pdftex.def)             Requested size: 505.89pt x 341.00423pt.
- [6 <./SFigs/S5_fig.jpg>] [7 <./SFigs/S6_fig.jpg>]
-<SFigs/S7_fig.jpg, id=105, 1045.9075pt x 2032.59375pt>
-File: SFigs/S7_fig.jpg Graphic file (type jpg)
-<use SFigs/S7_fig.jpg>
-Package pdftex.def Info: SFigs/S7_fig.jpg  used on input line 125.
-(pdftex.def)             Requested size: 328.82541pt x 639.02983pt.
-
-
-LaTeX Warning: Float too large for page by 51.11864pt on input line 129.
-
-<SFigs/S8_fig.jpg, id=106, 1045.9075pt x 2032.59375pt>
-File: SFigs/S8_fig.jpg Graphic file (type jpg)
-<use SFigs/S8_fig.jpg>
-Package pdftex.def Info: SFigs/S8_fig.jpg  used on input line 133.
-(pdftex.def)             Requested size: 328.82541pt x 639.02983pt.
-
-LaTeX Warning: Float too large for page by 30.71863pt on input line 137.
-
-[8] [9 <./SFigs/S7_fig.jpg>] [10 <./SFigs/S8_fig.jpg>]
-<SFigs/S9_fig.jpg, id=128, 1238.6275pt x 1285.80376pt>
-File: SFigs/S9_fig.jpg Graphic file (type jpg)
-<use SFigs/S9_fig.jpg>
-Package pdftex.def Info: SFigs/S9_fig.jpg  used on input line 146.
-(pdftex.def)             Requested size: 354.12144pt x 367.61545pt.
- [11]
-<SFigs/S10_fig.jpg, id=136, 2336.73pt x 1709.38625pt>
-File: SFigs/S10_fig.jpg Graphic file (type jpg)
-<use SFigs/S10_fig.jpg>
-Package pdftex.def Info: SFigs/S10_fig.jpg  used on input line 155.
-(pdftex.def)             Requested size: 505.89pt x 370.06703pt.
- [12 <./SFigs/S9_fig.jpg>] [13 <./SFigs/S10_fig.jpg>]
-<SFigs/S15_fig.jpg, id=148, 1412.27625pt x 2039.62pt>
-File: SFigs/S15_fig.jpg Graphic file (type jpg)
-<use SFigs/S15_fig.jpg>
-Package pdftex.def Info: SFigs/S15_fig.jpg  used on input line 194.
-(pdftex.def)             Requested size: 404.71353pt x 584.4722pt.
-<SFigs/S16_fig.jpg, id=152, 1412.27625pt x 2039.62pt>
-File: SFigs/S16_fig.jpg Graphic file (type jpg)
-<use SFigs/S16_fig.jpg>
-Package pdftex.def Info: SFigs/S16_fig.jpg  used on input line 205.
-(pdftex.def)             Requested size: 404.71353pt x 584.4722pt.
- [14] [15 <./SFigs/S15_fig.jpg>]
-Overfull \vbox (57.76103pt too high) has occurred while \output is active []
-
-
-[16 <./SFigs/S16_fig.jpg>]
-<SFigs/S17_fig.jpg, id=171, 1421.31pt x 2046.64626pt>
-File: SFigs/S17_fig.jpg Graphic file (type jpg)
-<use SFigs/S17_fig.jpg>
-Package pdftex.def Info: SFigs/S17_fig.jpg  used on input line 223.
-(pdftex.def)             Requested size: 404.71353pt x 582.76935pt.
-
-
-LaTeX Warning: Float too large for page by 15.25816pt on input line 227.
-
-[17] [18 <./SFigs/S17_fig.jpg>]
-<SFigs/S18_fig.jpg, id=183, 1421.31pt x 2046.64626pt>
-File: SFigs/S18_fig.jpg Graphic file (type jpg)
-<use SFigs/S18_fig.jpg>
-Package pdftex.def Info: SFigs/S18_fig.jpg  used on input line 234.
-(pdftex.def)             Requested size: 404.71353pt x 582.76935pt.
-
-
-LaTeX Warning: Float too large for page by 35.65817pt on input line 238.
-
+[7] [8]
 \Changes@OutFile=\write6
 \openout6 = `S1_Text.soc'.
 
 \tf@loc=\write7
 \openout7 = `S1_Text.loc'.
 
-[19] [20 <./SFigs/S18_fig.jpg>] (S1_Text.aux)
+ [9] (S1_Text.aux)
 Package rerunfilecheck Info: File `S1_Text.out' has not changed.
 (rerunfilecheck)             Checksum: 9DBCBE6820CF7A4BA35498AA563FA3AE;2973.
  ) 
 Here is how much of TeX's memory you used:
- 24126 strings out of 478338
- 454575 string characters out of 2834777
- 722994 words of memory out of 3000000
- 42068 multiletter control sequences out of 15000+600000
+ 24012 strings out of 478338
+ 452729 string characters out of 2834777
+ 718460 words of memory out of 3000000
+ 41989 multiletter control sequences out of 15000+600000
  495466 words of font info for 86 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 114i,10n,108p,1969b,547s stack positions out of 10000i,1000n,20000p,200000b,80000s
+ 114i,10n,108p,1961b,516s stack positions out of 10000i,1000n,20000p,200000b,80000s
 {C:/Users/Siyu Wang/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/base/8r.enc
 }<C:/Users/Siyu Wang/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/
 cm/cmmi10.pfb><C:/Users/Siyu Wang/AppData/Local/Programs/MiKTeX/fonts/type1/pub
@@ -1031,9 +950,9 @@ s/Siyu Wang/AppData/Local/Programs/MiKTeX/fonts/type1/urw/helvetic/uhvr8a.pfb><
 C:/Users/Siyu Wang/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmb8a.p
 fb><C:/Users/Siyu Wang/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmr
 8a.pfb>
-Output written on S1_Text.pdf (20 pages, 3042351 bytes).
+Output written on S1_Text.pdf (9 pages, 119005 bytes).
 PDF statistics:
- 245 PDF objects out of 1000 (max. 8388607)
- 42 named destinations out of 1000 (max. 500000)
- 140 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 148 PDF objects out of 1000 (max. 8388607)
+ 20 named destinations out of 1000 (max. 500000)
+ 85 words of extra memory for PDF output out of 10000 (max. 10000000)
 

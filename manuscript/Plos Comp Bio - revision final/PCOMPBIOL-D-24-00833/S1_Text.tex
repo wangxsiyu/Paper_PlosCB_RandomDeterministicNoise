@@ -54,6 +54,10 @@
 \renewcommand{\thefigure}{S\arabic{figure} Fig}
 \renewcommand{\thetable}{\Alph{table}}
 
+\renewcommand{\includegraphics}[2][]{}
+\renewcommand{\caption}[1]{}
+
+
 \usepackage{changes}
 \usepackage[labelfont=bf, labelsep=period]{caption}
 \definechangesauthor[name={Siyu Wang}, color=red]{siyu}
@@ -63,14 +67,16 @@
 
 
 \title{Supplementary Materials: Separating random and deterministic sources of computational noises in explore-exploit decisions}
-\author[1]{Siyu Wang}
-\author[1,2,3]{Robert C. Wilson}
+\author[1]{Siyu Wang}%,\textcurrency
+\author[1,2,3,4,5]{Robert C. Wilson}
 
-
-\affil[1]{Department of Psychology, University of Arizona, Tucson AZ, USA}
+\affil[1]{Department of Psychology, University of Arizona, Tucson, Arizona, United States of America}
 \affil[2]{Neuroscience and Physiological Sciences Graduate Interdisciplinary Program, University of
-	Arizona, Tucson AZ, USA}
-\affil[3]{Cognitive Science Program, University of Arizona, Tucson AZ, USA}
+	Arizona, Tucson, Arizona, United States of America}
+\affil[3]{Cognitive Science Program, University of Arizona, Tucson, Arizona, United States of America}
+\affil[4]{School of Psychology, Georgia Institute of Technology, Atlanta, Georgia, United States of America}
+\affil[5]{Center of Excellence for Computational Cognition, Georgia Institute of Technology,  Atlanta, Georgia, United States of America}
+
 
       
 \date{}
@@ -84,79 +90,79 @@
 	\subsection{Deterministic noise captures known deterministic processes excluded from the model}	
 	We checked if our fitted deterministic noise could indeed capture unobserved deterministic process that was not accounted for by the decision model. We test this by leaving out one known deterministic process from the decision model, and ask if our method could recover that known deterministic process as deterministic noise. In particular, we fit a reduced version of our model that only considers reward and ignores the influence of uncertainty condition and spatial bias on explore-exploit decisions.  
 	$$\Delta Q= \Delta R+n_{det}+n_{ran}$$
-	Here, $\Delta Q, \Delta R, n_{det}, n_{ran}$ represent the same variables as in the full model (Equation 2 in the manuscript).	If deterministic noise in our model can indeed capture unobserved deterministic processes that's missed by the model, then we would expect to see a higher level of fitted deterministic noise in the reduced model compared to in the full model, whereas the level of random noise should remain unchanged. By comparing the	fitted posterior distributions over the group-level means of the deterministic and random noise parameters $\sigma_{det}$ and $\sigma_{ran}$, as expected, we observed an increase in deterministic noise and no change in random noise between the reduced and the full model (\ref{S4}). This suggests that our model is capable of detecting missing deterministic processes.
-	\setcounter{figure}{3}
-	\begin{figure}[H]
-		\begin{center}
-			\includegraphics[width=\textwidth]{SFigs/S4_fig.jpg}
-			\bcaption{Deterministic noise can recover known deterministic processes that's intentionally omitted by the model.}{In the reduced model where the deterministic effect of uncertainty condition is omitted from the model, deterministic noise is higher compared to the full model that accounts for the effect of uncertainty. Random noise remains unchanged between the two models.}
-			\label{S4}
-		\end{center}
-	\end{figure} 
+	Here, $\Delta Q, \Delta R, n_{det}, n_{ran}$ represent the same variables as in the full model (Equation 2 in the manuscript).	If deterministic noise in our model can indeed capture unobserved deterministic processes that's missed by the model, then we would expect to see a higher level of fitted deterministic noise in the reduced model compared to in the full model, whereas the level of random noise should remain unchanged. By comparing the	fitted posterior distributions over the group-level means of the deterministic and random noise parameters $\sigma_{det}$ and $\sigma_{ran}$, as expected, we observed an increase in deterministic noise and no change in random noise between the reduced and the full model (S4 Fig). This suggests that our model is capable of detecting missing deterministic processes.
+%	\setcounter{figure}{3}
+%	\begin{figure}[H]
+%		\begin{center}
+%			\includegraphics[width=\textwidth]{SFigs/S4_fig.jpg}
+%			\bcaption{Deterministic noise can recover known deterministic processes that's intentionally omitted by the model.}{In the reduced model where the deterministic effect of uncertainty condition is omitted from the model, deterministic noise is higher compared to the full model that accounts for the effect of uncertainty. Random noise remains unchanged between the two models.}
+%			\label{S4}
+%		\end{center}
+%	\end{figure} 
 	\newpage
 	
 	\subsection{Frequentist coverage analysis}	
-	We next evaluated our hierarchical Bayesian analysis procedure using the `frequentist coverage analysis'. In the coverage analysis, we simulated choices with the fitted parameters from the Hierarchical Bayesian analysis, and then re-fit the model to the simulated choices to see whether we can recover the parameters (\ref{S5}). The simulation and re-fitting was repeated for 200 times. Then we counted out of the 200 repetitions how many times the true parameter that we simulate the choices from lies in the fitted 95\% confidence interval (\ref{S6}). This ratio will be referred to as the coverage rate. If our model fitting is reliable, then the fitted confidence interval should cover the true parameter for more than 95\% of the simulations. For random noise, the coverage rate is 100\% for both horizon 1, horizon 6, and the horizon difference. For deterministic noise, the coverage rate is 66\% for horizon 1 and 69\% for horizon 6. By comparing the posterior distributions of parameters that were used to generate simulations and the posterior distribution of recovered parameters, it is clear that our model systematically underestimates deterministic noise (\ref{S5}, \ref{S6}). Despite the underestimation of deterministic noise in both horizons, we could still reliably detect the horizon changes of deterministic noise (coverage rate is 97\%). This is because the underestimation of deterministic noise is partially canceled out when the difference is taken between horizons. For random noise, our model fitting procedure yields a faithful recovery. However, there is a conceptual limitation. Because random noise is modeled as non-stimulus-driven noise, it can include both true stochastic random noise and possible deterministic noises which do not depend on the stimuli. Because of this, our random noise estimate provides an upper bound of true `random noise' induced by intrinsic stochastic processes in the brain.
+	We next evaluated our hierarchical Bayesian analysis procedure using the `frequentist coverage analysis'. In the coverage analysis, we simulated choices with the fitted parameters from the Hierarchical Bayesian analysis, and then re-fit the model to the simulated choices to see whether we can recover the parameters (S5 Fig). The simulation and re-fitting was repeated for 200 times. Then we counted out of the 200 repetitions how many times the true parameter that we simulate the choices from lies in the fitted 95\% confidence interval (S6 Fig). This ratio will be referred to as the coverage rate. If our model fitting is reliable, then the fitted confidence interval should cover the true parameter for more than 95\% of the simulations. For random noise, the coverage rate is 100\% for both horizon 1, horizon 6, and the horizon difference. For deterministic noise, the coverage rate is 66\% for horizon 1 and 69\% for horizon 6. By comparing the posterior distributions of parameters that were used to generate simulations and the posterior distribution of recovered parameters, it is clear that our model systematically underestimates deterministic noise (S5 Fig, S6 Fig). Despite the underestimation of deterministic noise in both horizons, we could still reliably detect the horizon changes of deterministic noise (coverage rate is 97\%). This is because the underestimation of deterministic noise is partially canceled out when the difference is taken between horizons. For random noise, our model fitting procedure yields a faithful recovery. However, there is a conceptual limitation. Because random noise is modeled as non-stimulus-driven noise, it can include both true stochastic random noise and possible deterministic noises which do not depend on the stimuli. Because of this, our random noise estimate provides an upper bound of true `random noise' induced by intrinsic stochastic processes in the brain.
 	
-	\begin{figure}[H]
-		\begin{center}
-			\includegraphics[width=1\textwidth]{SFigs/S5_fig.jpg}
-			\bcaption{Hyperprior recovery.}{Parameter recovery over the posterior distribution of random and deterministic noise standard deviations $\sigma_{det}$ and $\sigma_{ran}$. Solid lines are true posterior used to simulate choices. Lighter color shades represent the re-fitted posterior to the simulated choices. Our model fitting procedure faithfully recovers the non-stimulus-driven random noise (A, B), but systematically underestimates deterministic noise in both horizons (D, E). The horizon differences in random noise is also faithfully recovered (C). The horizon differences in deterministic noise is also underestimated but not significant (F).}
-			\label{S5}
-		\end{center}
-	\end{figure} 
-	
-	\begin{figure}[H]
-		\begin{center}
-			\includegraphics[width=1\textwidth]{SFigs/S6_fig.jpg}
-			\bcaption{Frequentist coverage analysis.}{Parameter recovery over the mean estimates of random and deterministic noise standard deviations $\sigma_{det}$ and $\sigma_{ran}$. Solid lines are true posterior used to simulate choices, dashed black line is the mean of the true posterior. Histograms represent the mean estimates of the respective parameters in the refitting to the simulated data. (A) and (B) are random noise at H = 1 and H = 6, respectively. (C) is the random noise differences between horizons. (D) and (E) are deterministic noise at H = 1 and H = 6, respectively. (F) is the deterministic noise differences between horizons.}
-			\label{S6}
-		\end{center}
-	\end{figure}
+%	\begin{figure}[H]
+%		\begin{center}
+%			\includegraphics[width=1\textwidth]{SFigs/S5_fig.jpg}
+%			\bcaption{Hyperprior recovery.}{Parameter recovery over the posterior distribution of random and deterministic noise standard deviations $\sigma_{det}$ and $\sigma_{ran}$. Solid lines are true posterior used to simulate choices. Lighter color shades represent the re-fitted posterior to the simulated choices. Our model fitting procedure faithfully recovers the non-stimulus-driven random noise (A, B), but systematically underestimates deterministic noise in both horizons (D, E). The horizon differences in random noise is also faithfully recovered (C). The horizon differences in deterministic noise is also underestimated but not significant (F).}
+%			\label{S5}
+%		\end{center}
+%	\end{figure} 
+%	
+%	\begin{figure}[H]
+%		\begin{center}
+%			\includegraphics[width=1\textwidth]{SFigs/S6_fig.jpg}
+%			\bcaption{Frequentist coverage analysis.}{Parameter recovery over the mean estimates of random and deterministic noise standard deviations $\sigma_{det}$ and $\sigma_{ran}$. Solid lines are true posterior used to simulate choices, dashed black line is the mean of the true posterior. Histograms represent the mean estimates of the respective parameters in the refitting to the simulated data. (A) and (B) are random noise at H = 1 and H = 6, respectively. (C) is the random noise differences between horizons. (D) and (E) are deterministic noise at H = 1 and H = 6, respectively. (F) is the deterministic noise differences between horizons.}
+%			\label{S6}
+%		\end{center}
+%	\end{figure}
 
 	\newpage
 	\subsection{Parameter recovery of the subject-level parameter fits}
-	Next, we tested the ability of our model fitting procedure to recover parameters from simulated data at the subject level (\ref{S7}, \ref{S8}). The correlations between the true vs fitted parameters are significant across participants for all parameters (p $<$ 0.001). The strength of correlation between simulated and fit values are strong for both deterministic noise and random noise. Despite the strong inter-subject correlations, we again observed a systematic underestimation of $\sigma_{det}$ (\ref{S7}, \ref{S8}).
+	Next, we tested the ability of our model fitting procedure to recover parameters from simulated data at the subject level (S7 Fig, S8 Fig). The correlations between the true vs fitted parameters are significant across participants for all parameters (p $<$ 0.001). The strength of correlation between simulated and fit values are strong for both deterministic noise and random noise. Despite the strong inter-subject correlations, we again observed a systematic underestimation of $\sigma_{det}$ (S7 Fig, S8 Fig).
 	
 	Overall, we are able to detect both deterministic and random noises using our model to a satisfactory extent. Our model provides a lower bound for deterministic noise and an upper bound for random noise. In addition, We see better parameter recovery for random noise than deterministic noise. This is likely because we effectively have half as many trials for deterministic noise. In particular, while we generate two samples of random noise for each repeated game pair, we only generate one sample of deterministic noise, which by definition is the same in both of the repeated games. 
 	
-	\begin{figure}[hp]
-		\begin{center}
-			\includegraphics[width=0.65\textwidth]{SFigs/S7_fig.jpg}
-			\caption{Parameter recovery over the subject-level means of information bonus, $A$, spatial bias, $b$, random noise standard deviation, $\sigma_{ran}$, and deterministic noise standard deviation, $\sigma_{det}$, for horizon 1 (left column) and horizon 6 (right column) games.}
-			\label{S7}
-		\end{center}
-	\end{figure} 
-
-	\begin{figure}[hp]
-		\begin{center}
-			\includegraphics[width=0.65\textwidth]{SFigs/S8_fig.jpg}
-			\bcaption{Parameter recovery (200 repetitions).}{Same as Figure \ref{S7}, except that the recovered parameters were averaged across 200 repetitions and then compared to the original parameters.}
-			\label{S8}
-		\end{center}
-	\end{figure} 
-	
+%	\begin{figure}[hp]
+%		\begin{center}
+%			\includegraphics[width=0.65\textwidth]{SFigs/S7_fig.jpg}
+%			\caption{Parameter recovery over the subject-level means of information bonus, $A$, spatial bias, $b$, random noise standard deviation, $\sigma_{ran}$, and deterministic noise standard deviation, $\sigma_{det}$, for horizon 1 (left column) and horizon 6 (right column) games.}
+%			\label{S7}
+%		\end{center}
+%	\end{figure} 
+%
+%	\begin{figure}[hp]
+%		\begin{center}
+%			\includegraphics[width=0.65\textwidth]{SFigs/S8_fig.jpg}
+%			\bcaption{Parameter recovery (200 repetitions).}{Same as Figure S7 Fig, except that the recovered parameters were averaged across 200 repetitions and then compared to the original parameters.}
+%			\label{S8}
+%		\end{center}
+%	\end{figure} 
+%	
 	\newpage	
 	\subsection{Parameter recovery of arbitrary combinations of deterministic and random noises \label{gridrecovery}}
 	
-	Lastly, in addition to testing how our model performs in parameter ranges around the actual fitted parameters, we tested the limitations of our models in arbitrary combinations of random vs deterministic noises. All combinations of random and deterministic noises with $0 \le \sigma_{det} \le 10$ and $0 \le \sigma_{ran} \le 10$ were tested. In a special case, we evaluated how our model performs when there is only random noise or only deterministic noise (\ref{S9}). In the simulation with fully deterministic noise and 0 random noise, our model successfully recovered both random and deterministic noise (\ref{S9} C, D), however in the simulation with fully random noise and 0 deterministic noise, although our model successfully recovered random noise, some small proportion of deterministic noise was falsely detected when they should instead be 0 (\ref{S9} A, B). However, this phenomenon only exists when the true deterministic noise is 0, once the true deterministic noise is greater than 1, we don't observe this obvious inflation of deterministic noise anymore (\ref{S10}). Apart from this, our model did a fairly good job in recovering all combinations of random and deterministic noises (\ref{S10}).
+	Lastly, in addition to testing how our model performs in parameter ranges around the actual fitted parameters, we tested the limitations of our models in arbitrary combinations of random vs deterministic noises. All combinations of random and deterministic noises with $0 \le \sigma_{det} \le 10$ and $0 \le \sigma_{ran} \le 10$ were tested. In a special case, we evaluated how our model performs when there is only random noise or only deterministic noise (S9 Fig). In the simulation with fully deterministic noise and 0 random noise, our model successfully recovered both random and deterministic noise (S9 Fig C, D), however in the simulation with fully random noise and 0 deterministic noise, although our model successfully recovered random noise, some small proportion of deterministic noise was falsely detected when they should instead be 0 (S9 Fig A, B). However, this phenomenon only exists when the true deterministic noise is 0, once the true deterministic noise is greater than 1, we don't observe this obvious inflation of deterministic noise anymore (S10 Fig). Apart from this, our model did a fairly good job in recovering all combinations of random and deterministic noises (S10 Fig).
 	
-	\begin{figure}[H]
-		\begin{center}
-			\includegraphics[width=0.7\textwidth]{SFigs/S9_fig.jpg}
-			\bcaption{Parameter recovery with 0 random noise or 0 deterministic noise.}{Parameter recovery over the posterior of random noise standard deviation, $\sigma_{ran}$, and deterministic noise standard deviation, $\sigma_{det}$, for purely random noise (top row) and purely deterministic noise (bottom row) games. 
-			}
-			\label{S9}
-		\end{center}
-	\end{figure} 
-
-	\begin{figure}[hp]
-		\begin{center}
-			\includegraphics[width=1\textwidth]{SFigs/S10_fig.jpg}
-			\bcaption{Parameter recovery on arbitratry combinations of random and deterministic noises.}{Parameter recovery on arbitrary combinations of random and deterministic noises. A. Recovered posterior distributions of random noise. B. Recovered posterior distributions of deterministic noise. For both A and B, from the top row to the bottom row, the true noise standard deviation that is used in the simulations go from 0 to 10. The y limit of each panel is 4 (+/- 2 from the true value). Our model did a relatively good job in recovering all combinations of deterministic and random noises.}
-			\label{S10}
-		\end{center}
-	\end{figure} 
+%	\begin{figure}[H]
+%		\begin{center}
+%			\includegraphics[width=0.7\textwidth]{SFigs/S9_fig.jpg}
+%			\bcaption{Parameter recovery with 0 random noise or 0 deterministic noise.}{Parameter recovery over the posterior of random noise standard deviation, $\sigma_{ran}$, and deterministic noise standard deviation, $\sigma_{det}$, for purely random noise (top row) and purely deterministic noise (bottom row) games. 
+%			}
+%			\label{S9}
+%		\end{center}
+%	\end{figure} 
+%
+%	\begin{figure}[hp]
+%		\begin{center}
+%			\includegraphics[width=1\textwidth]{SFigs/S10_fig.jpg}
+%			\bcaption{Parameter recovery on arbitratry combinations of random and deterministic noises.}{Parameter recovery on arbitrary combinations of random and deterministic noises. A. Recovered posterior distributions of random noise. B. Recovered posterior distributions of deterministic noise. For both A and B, from the top row to the bottom row, the true noise standard deviation that is used in the simulations go from 0 to 10. The y limit of each panel is 4 (+/- 2 from the true value). Our model did a relatively good job in recovering all combinations of deterministic and random noises.}
+%			\label{S10}
+%		\end{center}
+%	\end{figure} 
 	
 	\newpage
 	\section{Alternative models}
@@ -187,55 +193,56 @@
 		\label{table}	
 	\end{table}
 	
-	These models were fit to the data. The posterior distributions over the group-level means of the deterministic and random noise standard deviation $\sigma_{det}$ and $\sigma_{ran}$ (when they exist) in these model variants are shown in \ref{S15}. 
-	\setcounter{figure}{14}
-	\begin{figure}[hp]
-		\begin{center}
-			\includegraphics[width=0.8\textwidth]{SFigs/S15_fig.jpg}
-			\bcaption{Model based analysis with reduced models.}{Each row is one model. These models varied in whether deterministic $\sigma^{det}$ and random noise $\sigma^{ran}$ are present or not and whether either types of noise is dependent on horizon (subscript denotes the dependence on horizon). }
-			\label{S15}
-		\end{center}
-	\end{figure}
+	These models were fit to the data. The posterior distributions over the group-level means of the deterministic and random noise standard deviation $\sigma_{det}$ and $\sigma_{ran}$ (when they exist) in these model variants are shown in S15 Fig. 
+%	\setcounter{figure}{14}
+%	\begin{figure}[hp]
+%		\begin{center}
+%			\includegraphics[width=0.8\textwidth]{SFigs/S15_fig.jpg}
+%			\bcaption{Model based analysis with reduced models.}{Each row is one model. These models varied in whether deterministic $\sigma^{det}$ and random noise $\sigma^{ran}$ are present or not and whether either types of noise is dependent on horizon (subscript denotes the dependence on horizon). }
+%			\label{S15}
+%		\end{center}
+%	\end{figure}
+	\newpage
 
 	\subsection{Evaluate our model's ability to detect horizon-dependent changes in random and deterministic noises}		
-	We then examined if our model can indeed qualitatively capture whether deterministic and random noise are present or not and whether either types of noise is dependent on horizon. To test this, we simulated choices from each of the 6 models, and then fit the simulated choices with our original full model. The simulation was repeated 50 times for each model. Indeed, we showed that our model can capture both the existence of random and deterministic noise, and whether each noise changes with horizon condition (\ref{S16}), with only one exception that our model falsely detected a small fraction of deterministic noise when no deterministic noise was present (\ref{S16}). This phenomenon was also examined and discussed in the section \ref{gridrecovery} above.
+	We then examined if our model can indeed qualitatively capture whether deterministic and random noise are present or not and whether either types of noise is dependent on horizon. To test this, we simulated choices from each of the 6 models, and then fit the simulated choices with our original full model. The simulation was repeated 50 times for each model. Indeed, we showed that our model can capture both the existence of random and deterministic noise, and whether each noise changes with horizon condition (S16 Fig), with only one exception that our model falsely detected a small fraction of deterministic noise when no deterministic noise was present (S16 Fig). This phenomenon was also examined and discussed in the section \ref{gridrecovery} above.
 	
-	\begin{figure}[H]
-		\begin{center}
-			\includegraphics[width=0.8\textwidth]{SFigs/S16_fig.jpg}
-			\bcaption{Hyperprior recovery of reduced models.}{Our model qualitatively captures whether deterministic and random noise are present or not and whether either types of noise is dependent on horizon. A-D. both deterministic and random noise are horizon dependent, E-H. only random noise is horizon dependent, I-L. only deterministic noise is horizon dependent, M-P. neither random nor deterministic noise is horizon dependent, Q-T. only deterministic noise is assumed to be present, U-X. only random noise is assumed to be present.}
-			\label{S16}
-		\end{center}
-	\end{figure}
+%	\begin{figure}[H]
+%		\begin{center}
+%			\includegraphics[width=0.8\textwidth]{SFigs/S16_fig.jpg}
+%			\bcaption{Hyperprior recovery of reduced models.}{Our model qualitatively captures whether deterministic and random noise are present or not and whether either types of noise is dependent on horizon. A-D. both deterministic and random noise are horizon dependent, E-H. only random noise is horizon dependent, I-L. only deterministic noise is horizon dependent, M-P. neither random nor deterministic noise is horizon dependent, Q-T. only deterministic noise is assumed to be present, U-X. only random noise is assumed to be present.}
+%			\label{S16}
+%		\end{center}
+%	\end{figure}
 	
 	%we also built and fit five additional versions of the model. 
-	
-	
-	\subsection{Posterior checks for alternative models}	
-	To check whether all aspects of the model were necessary to reproduce the qualitative pattern of findings, we again simulated choices using fitted parameters from these models and repeated the model-free analysis on the simulated data. As shown in \ref{S17}, only one of these alternative models, where random noise is horizon dependent but deterministic noise is not, can capture most of the qualitative features, including the increase in p(high info), p(low mean) and p(consistent). However, the quantitative fit to the data is not as good (\ref{S17}). Moreover, when comparing p(consistent) with the theoretically predicted p(consistent) for pure random noise (see analysis in Fig 3), only the fully model is statistically significant in both horizon conditions. Out of 50 simulations, the best alternative model only shows statistical significance in half of the simulations in Horizon 6, and fails on the other 50\% of the times. Because deterministic noise is not allowed to change with horizon in this alternative model, in horizon 6, deterministic noise is not large enough compared to the magnitude of random noise, to make p(inconsistent) lower than the random-noise-only prediction.   % SIYU says: they actually look quite similar, without horizon dependent deterministic noise, the fixed det noise model is only marginally worse on p(inconsistent) in [2 2] condition, as it overlaps with the pure random noise line more.
-	
-	
-	
-
-
-	\begin{figure}[hp]
-		\begin{center}
-			\includegraphics[width=0.8\textwidth]{SFigs/S17_fig.jpg}
-			\bcaption{Posterior checks for reduced models.}{A-D. both deterministic and random noise are horizon dependent, E-H. only random noise is horizon dependent, I-L. only deterministic noise is horizon dependent, M-P. neither random nor deterministic noise is horizon dependent, Q-T. only deterministic noise is assumed to be present, U-X. only random noise is assumed to be present.}
-			\label{S17}
-		\end{center}
-	\end{figure}
 	\newpage
 	
-	In our model, the subject-level noises are assumed to follow a gamma distribution (to ensure positiveness), the posteriors are right skewed (maximal likelihood estimation or mode is smaller than the mean), Because of the skewness, simulating data with the “mean” is noisier than simulating with the true distribution. Simulating from the true distribution requires taking expected value over all possible noise values, for ease of implementation, we simulated data by taking random samples from the posterior distribution (instead of using the mean). The simulation was repeated 50 times and then averaged (\ref{S17}). Simulation using the "mode" or maximal likelihood estimation was also shown here (\ref{S18}) and produces closer fit to the data. 
+	\subsection{Posterior checks for alternative models}	
+	To check whether all aspects of the model were necessary to reproduce the qualitative pattern of findings, we again simulated choices using fitted parameters from these models and repeated the model-free analysis on the simulated data. As shown in S17 Fig, only one of these alternative models, where random noise is horizon dependent but deterministic noise is not, can capture most of the qualitative features, including the increase in p(high info), p(low mean) and p(consistent). However, the quantitative fit to the data is not as good (S17 Fig). Moreover, when comparing p(consistent) with the theoretically predicted p(consistent) for pure random noise (see analysis in Fig 3), only the fully model is statistically significant in both horizon conditions. Out of 50 simulations, the best alternative model only shows statistical significance in half of the simulations in Horizon 6, and fails on the other 50\% of the times. Because deterministic noise is not allowed to change with horizon in this alternative model, in horizon 6, deterministic noise is not large enough compared to the magnitude of random noise, to make p(inconsistent) lower than the random-noise-only prediction.   % SIYU says: they actually look quite similar, without horizon dependent deterministic noise, the fixed det noise model is only marginally worse on p(inconsistent) in [2 2] condition, as it overlaps with the pure random noise line more.
 	
-	\begin{figure}[hp]
-	\begin{center}
-		\includegraphics[width=0.8\textwidth]{SFigs/S18_fig.jpg}
-		\bcaption{Posterior checks for reduced models (using maximal likelihood estimation).}{A-D. both deterministic and random noise are horizon dependent, E-H. only random noise is horizon dependent, I-L. only deterministic noise is horizon dependent, M-P. neither random nor deterministic noise is horizon dependent, Q-T. only deterministic noise is assumed to be present, U-X. only random noise is assumed to be present.}
-		\label{S18}
-	\end{center}
-	\end{figure}
+	
+	
+
+
+%	\begin{figure}[hp]
+%		\begin{center}
+%			\includegraphics[width=0.8\textwidth]{SFigs/S17_fig.jpg}
+%			\bcaption{Posterior checks for reduced models.}{A-D. both deterministic and random noise are horizon dependent, E-H. only random noise is horizon dependent, I-L. only deterministic noise is horizon dependent, M-P. neither random nor deterministic noise is horizon dependent, Q-T. only deterministic noise is assumed to be present, U-X. only random noise is assumed to be present.}
+%			\label{S17}
+%		\end{center}
+%	\end{figure}
+%	\newpage
+	
+	In our model, the subject-level noises are assumed to follow a gamma distribution (to ensure positiveness), the posteriors are right skewed (maximal likelihood estimation or mode is smaller than the mean), Because of the skewness, simulating data with the “mean” is noisier than simulating with the true distribution. Simulating from the true distribution requires taking expected value over all possible noise values, for ease of implementation, we simulated data by taking random samples from the posterior distribution (instead of using the mean). The simulation was repeated 50 times and then averaged (S17 Fig). Simulation using the "mode" or maximal likelihood estimation was also shown here (S18 Fig) and produces closer fit to the data. 
+	
+%	\begin{figure}[hp]
+%	\begin{center}
+%		\includegraphics[width=0.8\textwidth]{SFigs/S18_fig.jpg}
+%		\bcaption{Posterior checks for reduced models (using maximal likelihood estimation).}{A-D. both deterministic and random noise are horizon dependent, E-H. only random noise is horizon dependent, I-L. only deterministic noise is horizon dependent, M-P. neither random nor deterministic noise is horizon dependent, Q-T. only deterministic noise is assumed to be present, U-X. only random noise is assumed to be present.}
+%		\label{S18}
+%	\end{center}
+%	\end{figure}
 	
 
 
